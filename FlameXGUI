@@ -1,0 +1,672 @@
+local FlameX = Instance.new("ScreenGui")
+local TopbarFrame = Instance.new("Frame")
+local MainFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local HomeFrame = Instance.new("Frame")
+local FrameTitle = Instance.new("TextLabel")
+local UIGradient = Instance.new("UIGradient")
+local FrameTitle_2 = Instance.new("TextLabel")
+local PlayerAvatar = Instance.new("ImageLabel")
+local Divider = Instance.new("Frame")
+local ScriptsFrame = Instance.new("Frame")
+local FrameTitle_3 = Instance.new("TextLabel")
+local UIGradient_2 = Instance.new("UIGradient")
+local ScriptsList = Instance.new("ScrollingFrame")
+local UIGridLayout = Instance.new("UIGridLayout")
+local Script = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local PlayButton = Instance.new("ImageButton")
+local UIGradient_3 = Instance.new("UIGradient")
+local UICorner_3 = Instance.new("UICorner")
+local Divider_2 = Instance.new("Frame")
+local LocalPlayerFrame = Instance.new("Frame")
+local FrameTitle_4 = Instance.new("TextLabel")
+local UIGradient_4 = Instance.new("UIGradient")
+local Divider_3 = Instance.new("Frame")
+local OtherScriptsFrame = Instance.new("Frame")
+local FrameTitle_5 = Instance.new("TextLabel")
+local UIGradient_5 = Instance.new("UIGradient")
+local ScriptsList_2 = Instance.new("ScrollingFrame")
+local UIGridLayout_2 = Instance.new("UIGridLayout")
+local Script_2 = Instance.new("TextLabel")
+local UICorner_4 = Instance.new("UICorner")
+local PlayButton_2 = Instance.new("ImageButton")
+local UIGradient_6 = Instance.new("UIGradient")
+local UICorner_5 = Instance.new("UICorner")
+local Divider_4 = Instance.new("Frame")
+local SettingsFrame = Instance.new("Frame")
+local FrameTitle_6 = Instance.new("TextLabel")
+local UIGradient_7 = Instance.new("UIGradient")
+local Divider_5 = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local UIGradient_8 = Instance.new("UIGradient")
+local TopBarFrame2 = Instance.new("Frame")
+local UICorner_6 = Instance.new("UICorner")
+local Icon = Instance.new("ImageLabel")
+local PageSelector = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+local HomeButton = Instance.new("ImageButton")
+local UICorner_8 = Instance.new("UICorner")
+local UIGradient_9 = Instance.new("UIGradient")
+local UIListLayout = Instance.new("UIListLayout")
+local ScriptsButton = Instance.new("ImageButton")
+local UICorner_9 = Instance.new("UICorner")
+local UIGradient_10 = Instance.new("UIGradient")
+local LocalPlayerButton = Instance.new("ImageButton")
+local UICorner_10 = Instance.new("UICorner")
+local UIGradient_11 = Instance.new("UIGradient")
+local OtherPeoplesScriptsButton = Instance.new("ImageButton")
+local UICorner_11 = Instance.new("UICorner")
+local UIGradient_12 = Instance.new("UIGradient")
+local SettingsButton = Instance.new("ImageButton")
+local UICorner_12 = Instance.new("UICorner")
+local UIGradient_13 = Instance.new("UIGradient")
+local Divider_6 = Instance.new("Frame")
+local MiscButtons = Instance.new("Frame")
+local UICorner_13 = Instance.new("UICorner")
+local UIListLayout_2 = Instance.new("UIListLayout")
+local CloseButton = Instance.new("ImageButton")
+local UICorner_14 = Instance.new("UICorner")
+local UIGradient_14 = Instance.new("UIGradient")
+
+--Properties:
+
+FlameX.Name = "FlameX"
+FlameX.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+FlameX.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+TopbarFrame.Name = "TopbarFrame"
+TopbarFrame.Parent = FlameX
+TopbarFrame.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+TopbarFrame.BorderSizePixel = 0
+TopbarFrame.Position = UDim2.new(0.23274596, 0, 0.323133409, 0)
+TopbarFrame.Size = UDim2.new(0, 650, 0, 60)
+TopbarFrame.ZIndex = 2
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = TopbarFrame
+MainFrame.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(0, 0, 0.689800024, 0)
+MainFrame.Size = UDim2.new(0, 650, 0, 308)
+
+UICorner.Parent = MainFrame
+
+HomeFrame.Name = "HomeFrame"
+HomeFrame.Parent = MainFrame
+HomeFrame.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+HomeFrame.BackgroundTransparency = 1.000
+HomeFrame.Position = UDim2.new(0, 0, 0.0616883114, 0)
+HomeFrame.Size = UDim2.new(0, 650, 0, 289)
+
+FrameTitle.Name = "FrameTitle"
+FrameTitle.Parent = HomeFrame
+FrameTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FrameTitle.BackgroundTransparency = 1.000
+FrameTitle.Position = UDim2.new(0, 0, -0.0276816618, 0)
+FrameTitle.Size = UDim2.new(0, 650, 0, 50)
+FrameTitle.ZIndex = 2
+FrameTitle.Font = Enum.Font.SourceSansBold
+FrameTitle.Text = "HOME"
+FrameTitle.TextColor3 = Color3.fromRGB(255, 143, 7)
+FrameTitle.TextSize = 35.000
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 150, 30))}
+UIGradient.Rotation = 90
+UIGradient.Parent = FrameTitle
+
+FrameTitle_2.Name = "FrameTitle"
+FrameTitle_2.Parent = HomeFrame
+FrameTitle_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FrameTitle_2.BackgroundTransparency = 1.000
+FrameTitle_2.Position = UDim2.new(0, 0, 0.0726643652, 0)
+FrameTitle_2.Size = UDim2.new(0, 650, 0, 37)
+FrameTitle_2.ZIndex = 2
+FrameTitle_2.Font = Enum.Font.SourceSansBold
+FrameTitle_2.Text = "Welcome To FlameX"
+FrameTitle_2.TextColor3 = Color3.fromRGB(255, 143, 7)
+FrameTitle_2.TextSize = 24.000
+
+PlayerAvatar.Name = "PlayerAvatar"
+PlayerAvatar.Parent = HomeFrame
+PlayerAvatar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerAvatar.BackgroundTransparency = 2.000
+PlayerAvatar.Position = UDim2.new(0.326153845, 0, 0.200692043, 0)
+PlayerAvatar.Size = UDim2.new(0, 225, 0, 225)
+PlayerAvatar.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+Divider.Name = "Divider"
+Divider.Parent = HomeFrame
+Divider.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+Divider.BorderSizePixel = 0
+Divider.Position = UDim2.new(-0.00110013527, 0, 0.114219904, 0)
+Divider.Size = UDim2.new(0, 651, 0, 1)
+Divider.ZIndex = 3
+
+ScriptsFrame.Name = "ScriptsFrame"
+ScriptsFrame.Parent = MainFrame
+ScriptsFrame.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+ScriptsFrame.BackgroundTransparency = 1.000
+ScriptsFrame.Position = UDim2.new(0, 0, 0.0616883114, 0)
+ScriptsFrame.Size = UDim2.new(0, 650, 0, 289)
+ScriptsFrame.Visible = false
+
+FrameTitle_3.Name = "FrameTitle"
+FrameTitle_3.Parent = ScriptsFrame
+FrameTitle_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FrameTitle_3.BackgroundTransparency = 1.000
+FrameTitle_3.Position = UDim2.new(0, 0, -0.0553633235, 0)
+FrameTitle_3.Size = UDim2.new(0, 650, 0, 50)
+FrameTitle_3.ZIndex = 2
+FrameTitle_3.Font = Enum.Font.SourceSansBold
+FrameTitle_3.Text = "SCRIPTS"
+FrameTitle_3.TextColor3 = Color3.fromRGB(255, 143, 7)
+FrameTitle_3.TextSize = 35.000
+FrameTitle_3.TextYAlignment = Enum.TextYAlignment.Bottom
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 150, 30))}
+UIGradient_2.Rotation = 90
+UIGradient_2.Parent = FrameTitle_3
+
+ScriptsList.Name = "ScriptsList"
+ScriptsList.Parent = ScriptsFrame
+ScriptsList.Active = true
+ScriptsList.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+ScriptsList.BackgroundTransparency = 1.000
+ScriptsList.Position = UDim2.new(0, 0, 0.117647059, 0)
+ScriptsList.Size = UDim2.new(0, 650, 0, 255)
+ScriptsList.ScrollBarThickness = 0
+
+UIGridLayout.Parent = ScriptsList
+UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIGridLayout.CellPadding = UDim2.new(0, 2, 0, 2)
+UIGridLayout.CellSize = UDim2.new(0, 215, 0, 50)
+
+Script.Name = "Script"
+Script.Parent = ScriptsList
+Script.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+Script.Size = UDim2.new(0, 200, 0, 50)
+Script.Font = Enum.Font.SourceSansBold
+Script.Text = "      COMING SOON"
+Script.TextColor3 = Color3.fromRGB(255, 123, 7)
+Script.TextSize = 25.000
+Script.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_2.Parent = Script
+
+PlayButton.Name = "PlayButton"
+PlayButton.Parent = Script
+PlayButton.BackgroundColor3 = Color3.fromRGB(157, 125, 43)
+PlayButton.Position = UDim2.new(0.790000021, 0, 0.100000001, 0)
+PlayButton.Size = UDim2.new(0, 40, 0, 40)
+PlayButton.Image = "rbxassetid://7072720722"
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 160, 64))}
+UIGradient_3.Rotation = 90
+UIGradient_3.Parent = PlayButton
+
+UICorner_3.Parent = PlayButton
+
+Divider_2.Name = "Divider"
+Divider_2.Parent = ScriptsFrame
+Divider_2.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+Divider_2.BorderSizePixel = 0
+Divider_2.Position = UDim2.new(-0.00110013527, 0, 0.114219904, 0)
+Divider_2.Size = UDim2.new(0, 651, 0, 1)
+Divider_2.ZIndex = 3
+
+LocalPlayerFrame.Name = "LocalPlayerFrame"
+LocalPlayerFrame.Parent = MainFrame
+LocalPlayerFrame.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+LocalPlayerFrame.BackgroundTransparency = 1.000
+LocalPlayerFrame.Position = UDim2.new(0, 0, 0.0616883114, 0)
+LocalPlayerFrame.Size = UDim2.new(0, 650, 0, 289)
+LocalPlayerFrame.Visible = false
+
+FrameTitle_4.Name = "FrameTitle"
+FrameTitle_4.Parent = LocalPlayerFrame
+FrameTitle_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FrameTitle_4.BackgroundTransparency = 1.000
+FrameTitle_4.Position = UDim2.new(0, 0, -0.0276816618, 0)
+FrameTitle_4.Size = UDim2.new(0, 650, 0, 50)
+FrameTitle_4.ZIndex = 2
+FrameTitle_4.Font = Enum.Font.SourceSansBold
+FrameTitle_4.Text = "LOCAL PLAYER"
+FrameTitle_4.TextColor3 = Color3.fromRGB(255, 143, 7)
+FrameTitle_4.TextSize = 35.000
+
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 150, 30))}
+UIGradient_4.Rotation = 90
+UIGradient_4.Parent = FrameTitle_4
+
+Divider_3.Name = "Divider"
+Divider_3.Parent = LocalPlayerFrame
+Divider_3.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+Divider_3.BorderSizePixel = 0
+Divider_3.Position = UDim2.new(-0.00110013527, 0, 0.114219904, 0)
+Divider_3.Size = UDim2.new(0, 651, 0, 1)
+Divider_3.ZIndex = 3
+
+OtherScriptsFrame.Name = "OtherScriptsFrame"
+OtherScriptsFrame.Parent = MainFrame
+OtherScriptsFrame.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+OtherScriptsFrame.BackgroundTransparency = 1.000
+OtherScriptsFrame.Position = UDim2.new(0, 0, 0.0616883114, 0)
+OtherScriptsFrame.Size = UDim2.new(0, 650, 0, 289)
+OtherScriptsFrame.Visible = false
+
+FrameTitle_5.Name = "FrameTitle"
+FrameTitle_5.Parent = OtherScriptsFrame
+FrameTitle_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FrameTitle_5.BackgroundTransparency = 1.000
+FrameTitle_5.Position = UDim2.new(0, 0, -0.0276816618, 0)
+FrameTitle_5.Size = UDim2.new(0, 650, 0, 50)
+FrameTitle_5.ZIndex = 2
+FrameTitle_5.Font = Enum.Font.SourceSansBold
+FrameTitle_5.Text = "RECCOMENDED SCRIPTS"
+FrameTitle_5.TextColor3 = Color3.fromRGB(255, 143, 7)
+FrameTitle_5.TextSize = 35.000
+
+UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 150, 30))}
+UIGradient_5.Rotation = 90
+UIGradient_5.Parent = FrameTitle_5
+
+ScriptsList_2.Name = "ScriptsList"
+ScriptsList_2.Parent = OtherScriptsFrame
+ScriptsList_2.Active = true
+ScriptsList_2.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+ScriptsList_2.BackgroundTransparency = 1.000
+ScriptsList_2.Position = UDim2.new(0, 0, 0.117647059, 0)
+ScriptsList_2.Size = UDim2.new(0, 650, 0, 255)
+ScriptsList_2.ScrollBarThickness = 0
+
+UIGridLayout_2.Parent = ScriptsList_2
+UIGridLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+UIGridLayout_2.CellPadding = UDim2.new(0, 2, 0, 2)
+UIGridLayout_2.CellSize = UDim2.new(0, 215, 0, 50)
+
+Script_2.Name = "Script"
+Script_2.Parent = ScriptsList_2
+Script_2.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+Script_2.Size = UDim2.new(0, 200, 0, 50)
+Script_2.Font = Enum.Font.SourceSansBold
+Script_2.Text = "    INFINITE YIELD"
+Script_2.TextColor3 = Color3.fromRGB(255, 123, 7)
+Script_2.TextSize = 25.000
+Script_2.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_4.Parent = Script_2
+
+PlayButton_2.Name = "PlayButton"
+PlayButton_2.Parent = Script_2
+PlayButton_2.BackgroundColor3 = Color3.fromRGB(157, 125, 43)
+PlayButton_2.Position = UDim2.new(0.790000021, 0, 0.100000001, 0)
+PlayButton_2.Size = UDim2.new(0, 40, 0, 40)
+PlayButton_2.Image = "rbxassetid://7072720722"
+
+UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 160, 64))}
+UIGradient_6.Rotation = 90
+UIGradient_6.Parent = PlayButton_2
+
+UICorner_5.Parent = PlayButton_2
+
+Divider_4.Name = "Divider"
+Divider_4.Parent = OtherScriptsFrame
+Divider_4.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+Divider_4.BorderSizePixel = 0
+Divider_4.Position = UDim2.new(-0.00110013527, 0, 0.114219904, 0)
+Divider_4.Size = UDim2.new(0, 651, 0, 1)
+Divider_4.ZIndex = 3
+
+SettingsFrame.Name = "SettingsFrame"
+SettingsFrame.Parent = MainFrame
+SettingsFrame.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+SettingsFrame.BackgroundTransparency = 1.000
+SettingsFrame.Position = UDim2.new(0, 0, 0.0616883114, 0)
+SettingsFrame.Size = UDim2.new(0, 650, 0, 289)
+SettingsFrame.Visible = false
+
+FrameTitle_6.Name = "FrameTitle"
+FrameTitle_6.Parent = SettingsFrame
+FrameTitle_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FrameTitle_6.BackgroundTransparency = 1.000
+FrameTitle_6.Position = UDim2.new(0, 0, -0.0276816618, 0)
+FrameTitle_6.Size = UDim2.new(0, 650, 0, 50)
+FrameTitle_6.ZIndex = 2
+FrameTitle_6.Font = Enum.Font.SourceSansBold
+FrameTitle_6.Text = "SETTINGS"
+FrameTitle_6.TextColor3 = Color3.fromRGB(255, 143, 7)
+FrameTitle_6.TextSize = 35.000
+
+UIGradient_7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 150, 30))}
+UIGradient_7.Rotation = 90
+UIGradient_7.Parent = FrameTitle_6
+
+Divider_5.Name = "Divider"
+Divider_5.Parent = SettingsFrame
+Divider_5.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+Divider_5.BorderSizePixel = 0
+Divider_5.Position = UDim2.new(-0.00110013527, 0, 0.114219904, 0)
+Divider_5.Size = UDim2.new(0, 651, 0, 1)
+Divider_5.ZIndex = 3
+
+Title.Name = "Title"
+Title.Parent = TopbarFrame
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(0.0984615386, 0, 0, 0)
+Title.Size = UDim2.new(0, 112, 0, 59)
+Title.ZIndex = 2
+Title.Font = Enum.Font.SourceSansBold
+Title.Text = "FlameX"
+Title.TextColor3 = Color3.fromRGB(255, 143, 7)
+Title.TextSize = 41.000
+Title.TextWrapped = true
+Title.TextXAlignment = Enum.TextXAlignment.Left
+
+UIGradient_8.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 150, 30))}
+UIGradient_8.Rotation = 90
+UIGradient_8.Parent = Title
+
+TopBarFrame2.Name = "TopBarFrame2"
+TopBarFrame2.Parent = TopbarFrame
+TopBarFrame2.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+TopBarFrame2.BorderSizePixel = 0
+TopBarFrame2.Position = UDim2.new(0, 0, 0.539799988, 0)
+TopBarFrame2.Size = UDim2.new(0, 650, 0, 27)
+
+UICorner_6.Parent = TopbarFrame
+
+Icon.Name = "Icon"
+Icon.Parent = TopbarFrame
+Icon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Icon.BackgroundTransparency = 1.000
+Icon.Size = UDim2.new(0, 64, 0, 59)
+Icon.Image = "rbxassetid://10049948982"
+Icon.ScaleType = Enum.ScaleType.Tile
+
+PageSelector.Name = "PageSelector"
+PageSelector.Parent = TopbarFrame
+PageSelector.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+PageSelector.Position = UDim2.new(0.280953377, 0, 0.115034483, 0)
+PageSelector.Size = UDim2.new(0, 232, 0, 46)
+PageSelector.ZIndex = 3
+
+UICorner_7.Parent = PageSelector
+
+HomeButton.Name = "HomeButton"
+HomeButton.Parent = PageSelector
+HomeButton.BackgroundColor3 = Color3.fromRGB(157, 125, 43)
+HomeButton.Position = UDim2.new(0.0845070407, 0, 0, 0)
+HomeButton.Size = UDim2.new(0, 40, 0, 40)
+HomeButton.Image = "rbxassetid://7072717697"
+
+UICorner_8.Parent = HomeButton
+
+UIGradient_9.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 160, 64))}
+UIGradient_9.Rotation = 90
+UIGradient_9.Parent = HomeButton
+
+UIListLayout.Parent = PageSelector
+UIListLayout.FillDirection = Enum.FillDirection.Horizontal
+UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+UIListLayout.Padding = UDim.new(0, 5)
+
+ScriptsButton.Name = "ScriptsButton"
+ScriptsButton.Parent = PageSelector
+ScriptsButton.BackgroundColor3 = Color3.fromRGB(157, 125, 43)
+ScriptsButton.Position = UDim2.new(0.0845070407, 0, 0, 0)
+ScriptsButton.Size = UDim2.new(0, 40, 0, 40)
+ScriptsButton.Image = "rbxassetid://7072716382"
+
+UICorner_9.Parent = ScriptsButton
+
+UIGradient_10.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 160, 64))}
+UIGradient_10.Rotation = 90
+UIGradient_10.Parent = ScriptsButton
+
+LocalPlayerButton.Name = "LocalPlayerButton"
+LocalPlayerButton.Parent = PageSelector
+LocalPlayerButton.BackgroundColor3 = Color3.fromRGB(157, 125, 43)
+LocalPlayerButton.Position = UDim2.new(0.0845070407, 0, 0, 0)
+LocalPlayerButton.Size = UDim2.new(0, 40, 0, 40)
+LocalPlayerButton.Image = "rbxassetid://7072724538"
+
+UICorner_10.Parent = LocalPlayerButton
+
+UIGradient_11.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 160, 64))}
+UIGradient_11.Rotation = 90
+UIGradient_11.Parent = LocalPlayerButton
+
+OtherPeoplesScriptsButton.Name = "OtherPeoplesScriptsButton"
+OtherPeoplesScriptsButton.Parent = PageSelector
+OtherPeoplesScriptsButton.BackgroundColor3 = Color3.fromRGB(157, 125, 43)
+OtherPeoplesScriptsButton.Position = UDim2.new(0.0845070407, 0, 0, 0)
+OtherPeoplesScriptsButton.Size = UDim2.new(0, 40, 0, 40)
+OtherPeoplesScriptsButton.Image = "rbxassetid://7072719866"
+
+UICorner_11.Parent = OtherPeoplesScriptsButton
+
+UIGradient_12.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 160, 64))}
+UIGradient_12.Rotation = 90
+UIGradient_12.Parent = OtherPeoplesScriptsButton
+
+SettingsButton.Name = "SettingsButton"
+SettingsButton.Parent = PageSelector
+SettingsButton.BackgroundColor3 = Color3.fromRGB(157, 125, 43)
+SettingsButton.Position = UDim2.new(0.0845070407, 0, 0, 0)
+SettingsButton.Size = UDim2.new(0, 40, 0, 40)
+SettingsButton.Image = "rbxassetid://7072721682"
+
+UICorner_12.Parent = SettingsButton
+
+UIGradient_13.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 160, 64))}
+UIGradient_13.Rotation = 90
+UIGradient_13.Parent = SettingsButton
+
+Divider_6.Name = "Divider"
+Divider_6.Parent = TopbarFrame
+Divider_6.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+Divider_6.BorderSizePixel = 0
+Divider_6.Position = UDim2.new(-0.00110013527, 0, 0.996572852, 0)
+Divider_6.Size = UDim2.new(0, 651, 0, 1)
+Divider_6.ZIndex = 3
+
+MiscButtons.Name = "MiscButtons"
+MiscButtons.Parent = TopbarFrame
+MiscButtons.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+MiscButtons.Position = UDim2.new(0.911722481, 0, 0.115034483, 0)
+MiscButtons.Size = UDim2.new(0, 50, 0, 46)
+MiscButtons.ZIndex = 3
+
+UICorner_13.Parent = MiscButtons
+
+UIListLayout_2.Parent = MiscButtons
+UIListLayout_2.FillDirection = Enum.FillDirection.Horizontal
+UIListLayout_2.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_2.VerticalAlignment = Enum.VerticalAlignment.Center
+UIListLayout_2.Padding = UDim.new(0, 5)
+
+CloseButton.Name = "CloseButton"
+CloseButton.Parent = MiscButtons
+CloseButton.BackgroundColor3 = Color3.fromRGB(157, 125, 43)
+CloseButton.Position = UDim2.new(0.0845070407, 0, 0, 0)
+CloseButton.Size = UDim2.new(0, 40, 0, 40)
+CloseButton.Image = "rbxassetid://7072725342"
+
+UICorner_14.Parent = CloseButton
+
+UIGradient_14.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 160, 64))}
+UIGradient_14.Rotation = 90
+UIGradient_14.Parent = CloseButton
+
+-- Scripts:
+
+local function JSOSHP_fake_script() -- PlayerAvatar.PlayerIconScript 
+	local script = Instance.new('LocalScript', PlayerAvatar)
+
+	local players = game:GetService("Players")
+	local player = players.LocalPlayer
+	
+	local imageLabel = script.Parent
+	
+	local success, result = pcall(function()
+		return players:GetUserThumbnailAsync(player.UserId, Enum.ThumbnailType.AvatarThumbnail, Enum.ThumbnailSize.Size420x420)
+	end)
+	
+	if success then
+		if result then
+			imageLabel.Image = result
+		end
+	else
+		print("why fail did - retor (the flamex guy)")
+	end
+end
+coroutine.wrap(JSOSHP_fake_script)()
+local function URGE_fake_script() -- PlayButton_2.ExecuteScript 
+	local script = Instance.new('LocalScript', PlayButton_2)
+
+	function onClicked()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+	end
+	
+	script.Parent.MouseButton1Click:Connect(onClicked)
+end
+coroutine.wrap(URGE_fake_script)()
+local function QPIYT_fake_script() -- HomeButton.PageChangerScript 
+	local script = Instance.new('LocalScript', HomeButton)
+
+	local mainFrame = script.Parent.Parent.Parent.MainFrame
+	
+	function onClicked()
+		mainFrame.HomeFrame.Visible = true
+		mainFrame.SettingsFrame.Visible = false
+		mainFrame.LocalPlayerFrame.Visible = false
+		mainFrame.OtherScriptsFrame.Visible = false
+		mainFrame.ScriptsFrame.Visible = false
+	end
+	
+	script.Parent.MouseButton1Click:Connect(onClicked)
+end
+coroutine.wrap(QPIYT_fake_script)()
+local function CDDSXT_fake_script() -- ScriptsButton.PageChangerScript 
+	local script = Instance.new('LocalScript', ScriptsButton)
+
+	local mainFrame = script.Parent.Parent.Parent.MainFrame
+	
+	function onClicked()
+		mainFrame.HomeFrame.Visible = false
+		mainFrame.SettingsFrame.Visible = false
+		mainFrame.LocalPlayerFrame.Visible = false
+		mainFrame.OtherScriptsFrame.Visible = false
+		mainFrame.ScriptsFrame.Visible = true
+	end
+	
+	script.Parent.MouseButton1Click:Connect(onClicked)
+end
+coroutine.wrap(CDDSXT_fake_script)()
+local function EFTQYSX_fake_script() -- LocalPlayerButton.PageChangerScript 
+	local script = Instance.new('LocalScript', LocalPlayerButton)
+
+	local mainFrame = script.Parent.Parent.Parent.MainFrame
+	
+	function onClicked()
+		mainFrame.HomeFrame.Visible = false
+		mainFrame.SettingsFrame.Visible = false
+		mainFrame.LocalPlayerFrame.Visible = true
+		mainFrame.OtherScriptsFrame.Visible = false
+		mainFrame.ScriptsFrame.Visible = false
+	end
+	
+	script.Parent.MouseButton1Click:Connect(onClicked)
+end
+coroutine.wrap(EFTQYSX_fake_script)()
+local function TROHGW_fake_script() -- OtherPeoplesScriptsButton.PageChangerScript 
+	local script = Instance.new('LocalScript', OtherPeoplesScriptsButton)
+
+	local mainFrame = script.Parent.Parent.Parent.MainFrame
+	
+	function onClicked()
+		mainFrame.HomeFrame.Visible = false
+		mainFrame.SettingsFrame.Visible = false
+		mainFrame.LocalPlayerFrame.Visible = false
+		mainFrame.OtherScriptsFrame.Visible = true
+		mainFrame.ScriptsFrame.Visible = false
+	end
+	
+	script.Parent.MouseButton1Click:Connect(onClicked)
+end
+coroutine.wrap(TROHGW_fake_script)()
+local function YNCON_fake_script() -- SettingsButton.PageChangerScript 
+	local script = Instance.new('LocalScript', SettingsButton)
+
+	local mainFrame = script.Parent.Parent.Parent.MainFrame
+	
+	function onClicked()
+		mainFrame.HomeFrame.Visible = false
+		mainFrame.SettingsFrame.Visible = true
+		mainFrame.LocalPlayerFrame.Visible = false
+		mainFrame.OtherScriptsFrame.Visible = false
+		mainFrame.ScriptsFrame.Visible = false
+	end
+	
+	script.Parent.MouseButton1Click:Connect(onClicked)
+end
+coroutine.wrap(YNCON_fake_script)()
+local function QFWC_fake_script() -- CloseButton.CloseScript 
+	local script = Instance.new('LocalScript', CloseButton)
+
+	local GUI = script.Parent.Parent.Parent.Parent
+	
+	function onClose()
+		GUI:Destroy()
+	end
+	
+	script.Parent.MouseButton1Click:Connect(onClose)
+end
+coroutine.wrap(QFWC_fake_script)()
+local function PCSAHD_fake_script() -- TopbarFrame.Dragify 
+	local script = Instance.new('LocalScript', TopbarFrame)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+	    dragToggle = nil
+	    local dragSpeed = 0.50
+	    dragInput = nil
+	    dragStart = nil
+	    local dragPos = nil
+	    function updateInput(input)
+	        local Delta = input.Position - dragStart
+	        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+	        game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.30), {Position = Position}):Play()
+	    end
+	    Frame.InputBegan:Connect(function(input)
+	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+	            dragToggle = true
+	            dragStart = input.Position
+	            startPos = Frame.Position
+	            input.Changed:Connect(function()
+	                if input.UserInputState == Enum.UserInputState.End then
+	                    dragToggle = false
+	                end
+	            end)
+	        end
+	    end)
+	    Frame.InputChanged:Connect(function(input)
+	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	            dragInput = input
+	        end
+	    end)
+	    game:GetService("UserInputService").InputChanged:Connect(function(input)
+	        if input == dragInput and dragToggle then
+	            updateInput(input)
+	        end
+	    end)
+	end
+	
+	dragify(script.Parent)
+end
+coroutine.wrap(PCSAHD_fake_script)()
